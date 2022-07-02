@@ -1,40 +1,62 @@
-.checkout{
+.checkout {
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
-h4{
+
+h4 {
     margin: 0;
     margin-top: 1rem;
 }
 
-button{
+button {
     width: 200px;
     margin: 0 auto;
 }
-.stripe-card{
+
+.stripe-card {
     margin: 1rem 0;
 }
-.card-number{
+
+.card-number {
     margin-top: 2rem;
 }
-.card-element{
+
+.card-element {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 10px;
     width: 55%;
     margin: 0 auto;
 }
-.error{
+
+.error {
     border: 1px solid red;
 }
-.erro-message{
+
+.erro-message {
     color: red;
     font-size: 1.5rem;
 }
-.canceled_div{
+
+.canceled_div {
     margin-top: 100px;
 }
-.success_div{
+
+.success_div {
     margin-top: 100px;
+}
+
+.box-checkout {
+    width: 30%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

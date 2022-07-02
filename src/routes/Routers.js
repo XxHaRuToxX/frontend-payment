@@ -5,7 +5,6 @@ import { Home } from '../pages/Home';
 import { Login } from '../pages/Login';
 import { Signup } from '../pages/Signup';
 import { UserAuthContextProvider } from '../context/UserAuthContextProvider';
-// import { ProtectedRoute } from './ProtectedRoute';
 import { News } from '../pages/News';
 import { PrivateRoute } from './PrivateRoute';
 import { Checkout } from '../components/stripe/checkout/Checkout';
@@ -21,7 +20,7 @@ import { Business } from '../pages/business/Business';
 import { NewsContextProvider } from '../context/NewsContextProvider';
 import { AnyNews } from '../components/newsApi/news/AnyNews';
 import { Navbar } from '../components/newsApi/navbar/Navbar';
-// import { Card } from '../components/Card';
+
 export const Routers = () => {
 
     return (
@@ -30,7 +29,7 @@ export const Routers = () => {
                 <Col>
                     <UserAuthContextProvider>
                         <NewsContextProvider>
-                            <Navbar/>
+                            <Navbar />
                             <Routes>
                                 <Route element={<PrivateRoute />} >
                                     <Route path="/home" element={<Home />} />
@@ -39,24 +38,6 @@ export const Routers = () => {
                                     <Route path="/success" element={<Success />} />
                                     <Route path="/canceled" element={<Canceled />} />
                                 </Route>
-                                {/* <Route 
-                                    path="/home" 
-                                    element={
-                                        <ProtectedRoute>
-                                            <Home/>
-                                        </ProtectedRoute>
-                                    } 
-                                />
-                                <Route 
-                                    path="/news" 
-                                    element={
-                                        <ProtectedRoute>
-                                            <News/>
-                                        </ProtectedRoute>
-                                    } 
-                                /> */}
-
-                                {/* <Route path="/" element={<Card/>} /> */}
                                 <Route path="/" element={<AnyNews />} />
                                 <Route path="/login" element={<Login />} />
                                 <Route path="/signup" element={<Signup />} />

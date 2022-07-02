@@ -3,7 +3,6 @@ import { NewsArticle } from "../newsArticles/NewsArticle";
 import { Slider } from "../slider/Slider";
 import { Navbar } from '../navbar/Navbar';
 import '../../../styles/styles.css';
-import './anyNews.css';
 import { useNewsApi } from "../../../context/NewsContextProvider";
 
 export const AnyNews = () => {

@@ -9,8 +9,6 @@ export const Home = () => {
 
     const { user, logOut } = useUserAuth();
 
-    // console.log(user);
-
     const handleLogout = async () => {
 
         try {
@@ -22,18 +20,21 @@ export const Home = () => {
 
     return (
         <>
-            <div className="d-flex flex-column justify-content-center align-items-center home_div">
-                <div>
-                    <div className="p-4 box mt-3 text-center">
-                        Welcome<br />
+            <div>
+                <div className="d-flex flex-column justify-content-center align-items-center home_div">
+                    <div className="p-4 mt-3 text-white text-center">
+                        <h2>Welcome</h2>
+                        <br />
                         {
                             user && user.email
                         }
+                        <br /><br />
+                        <div className="d-grid gap-2">
+                            <Button variant="primary" onClick={handleLogout}>Log out</Button>
+                            <Link className='text-white' to={"/news"}>Go to News</Link>
+                        </div>
                     </div>
-                    <div className="d-grid gap-2">
-                        <Button variant="primary" onClick={handleLogout}>Log out</Button>
-                        <Link to={"/news"}>Go to News</Link>
-                    </div>
+
                 </div>
             </div>
         </>

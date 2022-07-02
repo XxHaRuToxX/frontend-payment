@@ -7,11 +7,11 @@ import './checkout.css';
 export const Success = () => {
     const navigate = useNavigate();
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center success_div">
+        <div className="d-flex flex-column justify-content-center align-items-center success_div text-white cont ">
             <h1>Thank you for your order</h1>
             <p>We are  currently processing your order and will send a confirmation email shortly.</p>
             <div>
-                <Button variant="primary" onClick={()=>navigate("/home")} >Continue Shopping</Button>
+                <Button variant="danger" onClick={() => navigate("/home")} >Continue Shopping</Button>
             </div>
         </div>
     )

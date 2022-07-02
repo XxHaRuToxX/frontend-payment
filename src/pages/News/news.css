@@ -1,12 +1,7 @@
-.news_div {
-    /*  background-color: #fafafa; */
-    align-content: center;
+.cont {
+    align-content: flex-end;
     width: 100%;
-    height: 50vh;
-    margin-top: 150px;
-}
-
-.box {
-    border: 1px solid #dfdfdf;
-    /* background-color: #fff; */
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

@@ -37,7 +37,6 @@ export const Navbar = () => {
                             <li>
                                 <Link to="/">
                                     <button className='category_button_auth'
-                                        /*   style={{ border: 'none', background: 'none', color: "#fff" }} */
                                         onClick={handleLogout}>
                                         Cerrar sesión
                                     </button>

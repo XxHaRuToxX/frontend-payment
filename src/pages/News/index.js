@@ -10,7 +10,7 @@ export const News = () => {
     const { user } = useUserAuth();
 
     return (
-        <div className="d-flex p-4 text-center justify-content-center news_div">
+        <div className="d-flex flex-row justify-content-center align-items-center news_div">
             {
                 products ? products.map((p) => (
                     <ContentCard product={p} key={p.id} />
