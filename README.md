@@ -17,9 +17,18 @@ Es una aplicacion de noticias que consume una [API](https://newsapi.org/) para m
   <img src="https://res.cloudinary.com/db50qqs57/image/upload/v1656766252/samples/FireShot_Capture_006_-_pruebaPago_-_checkout.stripe.com_uk4edb.png"/>
 </p>
 
+
+## 📰 Equipo
+- [Elvis Sanchez](https://)
+- [Milagros Marquina](https://)
+- [Fernando Belizario](https://)
+
 <p align="center">
-  <img src="https://res.cloudinary.com/db50qqs57/image/upload/v1656766256/samples/FireShot_Capture_011_-_Sky_News_-_localhost_jpdp6d.png"/>
+  <img src="https://res.cloudinary.com/db50qqs57/image/upload/v1656768041/samples/Imagen_02072022_081944_obonsy.png"/>
 </p>
+
+
+<br/>
 
 ## Available Scripts
 
