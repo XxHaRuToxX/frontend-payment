@@ -7,7 +7,7 @@ import './contentCard.css';
 export const ContentCard = ({ changeContent, product }) => {
 
     return (
-        <Card className="ms-5 mt-5" style={{ width: '20rem' }}>
+        <Card className="ms-5 box-con" style={{ width: '20rem' }}>
             <Card.Header className="p-3 d-flex flex-column justify-content-center align-items-center">
                 <div className="d-flex flex-row justify-content-center align-items-center">
                     <span className="price_soles me-3">S/.</span>
