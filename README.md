@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+<h1 align="center"> Reto #2 App de Noticias</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <samp>「 Proyecto tecnologico utilizando una API de noticias propuesto por RPA Latam 」</samp>
+  <samp></samp>
+</p>
+
+## 📰 Acerca del Proyecto
+
+Este proyecto fue iniciado con [Create React App](https://github.com/facebook/create-react-app).
+Es una aplicacion de noticias que consume una [API](https://newsapi.org/) para mostrar las noticias actuales y recientes, por otra parte tambien cuenta con dos metodos de suscripcion el cual el interesado podra acceder, una vez elegido el plan podra realizar el pago de forma segura desde la plataforma [STRIPE](https://stripe.com/es-419-us).
+
+
+## 📰 Vistas Generales
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db50qqs57/image/upload/v1656766252/samples/FireShot_Capture_006_-_pruebaPago_-_checkout.stripe.com_uk4edb.png"/>
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db50qqs57/image/upload/v1656766256/samples/FireShot_Capture_011_-_Sky_News_-_localhost_jpdp6d.png"/>
+</p>
 
 ## Available Scripts
 
