@@ -1,21 +1,30 @@
-.list_icon{
+.list_icon {
     list-style: none;
-    /* list-style-image: url('../../../asset/list-icon.png'); */
     list-style-type: square;
+    margin: 0 !important;
 }
-.price_content{
+
+.price_content {
     font-size: 60px;
 }
-.price_soles{
+
+.price_soles {
     font-size: 40px;
     margin-bottom: -10px;
 }
-.price_month{
+
+.price_month {
     font-size: 20px;
     margin-bottom: -20px;
 }
-.card_button{
-    height: 65px;
+
+.card_button {
+    height: 50px;
+    font-weight: 600 !important;
     border: #000 !important;
-    background-color: #000 !important;
+    background-color: rgb(192, 126, 126) !important;
+}
+
+.card_button:hover {
+    background-color: rgb(136, 86, 86) !important;
 }

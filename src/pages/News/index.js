@@ -7,16 +7,14 @@ import './news.css';
 
 export const News = () => {
 
-    
     const { user } = useUserAuth();
-
 
     return (
         <div className="d-flex p-4 text-center justify-content-center news_div">
             {
-                products ?  products.map((p)=>(
+                products ? products.map((p) => (
                     <ContentCard product={p} key={p.id} />
-                )): null
+                )) : null
             }
         </div>
     )
