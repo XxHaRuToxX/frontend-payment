@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { NewsArticle } from '../../components/newsApi/newsArticles/NewsArticle';
 import { useNewsApi } from '../../context/NewsContextProvider';
+import './../business/business.css';
+import { Form } from 'react-bootstrap';
 
 export const General = () => {
 
@@ -8,22 +10,30 @@ export const General = () => {
     const [dataSource, setDataSource] = useState();
     const [search, setSearch] = useState("");
 
-    useEffect(()=>{
-        const datasSource  = async ()=>{
+    useEffect(() => {
+        const datasSource = async () => {
             setDataSource(await getNewsSources("general"))
         }
 
         datasSource();
-    },[]);
+    }, []);
 
-    const searcher = (e)=>{
+    const searcher = (e) => {
         setSearch(e.target.value);
     }
-    const result = !search ? dataSource : dataSource.filter((data)=>data.title.includes(search));
+    const result = !search ? dataSource : dataSource.filter((data) => data.title.includes(search));
 
     return (
         <div>
-            <input value={search} onChange={searcher} className="form-control me-2 fs-4 fw-bold" type="text" placeholder="Search" aria-label="Search"/>
+            <div className="d-flex justify-content-center align-items-center">
+                <Form.Control
+                    value={search}
+                    onChange={searcher}
+                    className="w-50 me-2 input_business"
+                    type="text"
+                    placeholder="Search..."
+                    aria-label="Search" />
+            </div>
             <div className="all_notices">
                 {
                     dataSource ? dataSource.map((news) => (
