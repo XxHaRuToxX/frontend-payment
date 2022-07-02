@@ -1,0 +1,21 @@
+.list_icon{
+    list-style: none;
+    /* list-style-image: url('../../../asset/list-icon.png'); */
+    list-style-type: square;
+}
+.price_content{
+    font-size: 60px;
+}
+.price_soles{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+.price_month{
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+.card_button{
+    height: 65px;
+    border: #000 !important;
+    background-color: #000 !important;
+}

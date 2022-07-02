@@ -1,0 +1,27 @@
+
+
+.main-slider{
+    padding-top: 80px;
+}
+.carousel .slider-wrapper{
+    width: 80%;
+}
+
+.carousel .thumb{
+    width: 5%;
+    height: 50px;
+}
+.carousel{
+    text-align: center;
+}
+.legend{
+    font-size:30px;
+}
+
+.carousel .slide .legend{
+    font-size: 25px;
+    opacity: 20;
+}
+.carousel .slide img{
+    height: 600px;
+}
