@@ -12,7 +12,8 @@ export const Entertainment = () => {
 
     useEffect(() => {
         const datasSource = async () => {
-            setDataSource(await getNewsSources("entertainment"))
+            const news = await getNewsSources("entertainment")
+            setDataSource(news);
         }
 
         datasSource();
@@ -21,7 +22,8 @@ export const Entertainment = () => {
     const searcher = (e) => {
         setSearch(e.target.value);
     }
-    const result = !search ? dataSource : dataSource.filter((data) => data.title.includes(search));
+    const result = !search ? dataSource : dataSource.filter((data) => data.title.toLowerCase().includes(search.toLocaleLowerCase()));
+
 
     return (
         <div>
@@ -36,7 +38,7 @@ export const Entertainment = () => {
             </div>
             <div className="all_notices">
                 {
-                    dataSource ? dataSource.map((news) => (
+                    result ? result.map((news) => (
                         <NewsArticle data={news} key={news.url} />
                     )) : (
                         <p>Loading...</p>
