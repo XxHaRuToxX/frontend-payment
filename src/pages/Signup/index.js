@@ -3,7 +3,6 @@ import { Alert, Button, Form } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { useUserAuth } from '../../context/UserAuthContextProvider'
 import { useForm } from '../../hooks/useForm'
-
 import './signup.css';
 
 export const Signup = () => {
@@ -23,23 +22,19 @@ export const Signup = () => {
         e.preventDefault();
         setError("");
         try {
-
             await signUp(email, password);
             navigate("/login");
-
         } catch (error) {
-
             setError(error.message)
-
         }
     }
 
     return (
         <>
-            <div className="d-flex flex-column justify-content-center align-items-center signup_div">
-                <div>
-                    <div className="p-4 box">
-                        <h2 className="mb-3">Auth Signup</h2>
+            <div className="d-flex flex-column justify-content-center align-items-center login_div">
+                <div className='box'>
+                    <div className="p-4 my-3 px-5">
+                        <h2 className="mb-3 text-center mb-5">Auth Signup</h2>
                         {
                             error && <Alert variant="danger">{error}</Alert>
                         }
@@ -69,9 +64,9 @@ export const Signup = () => {
                             </div>
                         </Form>
                     </div>
-                    <div className="p-4 box mt-3 text-center">
-                        Already have an account? <Link to={"/login"}>Log in</Link>
-                    </div>
+                </div>
+                <div className="p-4 box mt-3 text-center">
+                    Already have an account? <Link to={"/login"}>Log in</Link>
                 </div>
             </div>
         </>

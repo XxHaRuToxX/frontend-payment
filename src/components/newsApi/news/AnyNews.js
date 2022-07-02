@@ -19,7 +19,7 @@ export const AnyNews = () => {
                         <NewsArticle data={news} key={news.url} />
                     ))
                 ) : (
-                    <p>Loading...</p>
+                    <p className="text-white">Loading...</p>
                 )}
             </div>
         </div>

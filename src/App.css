@@ -7,19 +7,20 @@
     align-items: center;
     height: 100vh;
 } */
-*{
+* {
     margin: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: inherit;
-    background: rgb(250, 254, 255);
+    background: #292929 !important;
     min-height: 100vh;
-    
+    overflow-x: hidden;
 }
+
 /* .box {
     border: 1px solid #dfdfdf;
     background-color: #fff;

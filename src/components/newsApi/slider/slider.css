@@ -1,27 +1,29 @@
-
-
-.main-slider{
+.main-slider {
     padding-top: 80px;
 }
-.carousel .slider-wrapper{
-    width: 80%;
+
+.carousel .slider-wrapper {
+    width: 100%;
 }
 
-.carousel .thumb{
+.carousel .thumb {
     width: 5%;
     height: 50px;
 }
-.carousel{
+
+.carousel {
     text-align: center;
 }
-.legend{
-    font-size:30px;
+
+.legend {
+    font-size: 30px;
 }
 
-.carousel .slide .legend{
+.carousel .slide .legend {
     font-size: 25px;
     opacity: 20;
 }
-.carousel .slide img{
-    height: 600px;
+
+.carousel .slide img {
+    height: 650px;
 }
